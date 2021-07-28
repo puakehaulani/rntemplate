@@ -11,11 +11,11 @@ const styles = StyleSheet.create({
     }
 });
 
-export default () => {
+export default ({ navigation }) => {
 
     return (
         <Onboarding
-            // onDone={ }
+            onDone={() => navigation.navigate("Home")}
             showSkip={false}
             showNext={false}
             pages={[

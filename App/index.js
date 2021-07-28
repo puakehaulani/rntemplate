@@ -1,9 +1,9 @@
 import React from 'react';
-import Home from './screens/Home';
-import Onboarding from './screens/Onboarding';
+
+import Navigation from './config/Navigation';
 
 export default function App() {
     return (
-        <Onboarding />
+        <Navigation />
     );
 }
