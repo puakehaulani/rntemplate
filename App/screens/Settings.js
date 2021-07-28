@@ -4,8 +4,7 @@ import {
     StyleSheet,
     Dimensions,
     Text,
-    StatusBar,
-    Button
+    StatusBar
 } from 'react-native';
 import colors from '../constants/colors';
 
@@ -20,13 +19,11 @@ const styles = StyleSheet.create({
     },
 })
 
-export default ({ navigation }) => {
+export default () => {
     return (
         <View style={styles.container}>
             <StatusBar barStyle="dark-content" />
-            <Text>Home Page</Text>
-            <Button title={"Settings"} onPress={() => navigation.navigate("Settings")} />
-            <Button title={"Profile"} onPress={() => navigation.navigate("Profile")} />
+            <Text>Settings Page</Text>
         </View>
     )
 }
