@@ -11,7 +11,7 @@ const MainStackScreen = () => (
     <MainStack.Navigator>
         <MainStack.Screen
             name="Home"
-            component={Tab}
+            component={Home} //could be replaced with "Tab" if applicable for app
             options={{ headerShown: true }}
         />
         <MainStack.Screen

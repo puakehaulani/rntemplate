@@ -7,15 +7,11 @@ import Contact from '../screens/Contact';
 const Drawer = createDrawerNavigator();
 const DrawerNav = () => (
     <Drawer.Navigator>
-        {/* <Drawer.Screen name="tab" component={TabNav} /> */}
         <Drawer.Screen name="Home" component={MainStack} />
         <Drawer.Screen name="Contact" component={Contact} />
     </Drawer.Navigator>
 )
 
-export default () => {
-
-    return (
-        <DrawerNav />
-    )
-};
+export default () => (
+    <DrawerNav />
+)
