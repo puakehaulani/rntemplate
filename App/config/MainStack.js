@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import Tab from './Tab';
 import Home from '../screens/Home';
 import Settings from '../screens/Settings';
 import Profile from '../screens/Profile';
@@ -10,7 +11,7 @@ const MainStackScreen = () => (
     <MainStack.Navigator>
         <MainStack.Screen
             name="Home"
-            component={Home}
+            component={Tab}
             options={{ headerShown: true }}
         />
         <MainStack.Screen
